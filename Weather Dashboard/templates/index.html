@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<nav class="navbar navbar-default">
+    <div class="container">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <div id= "content">
+                <h1>Weather Report</h1>
+            </div>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<div id= "content" style = "text-align: center; font-size: 30px">
+				<h3 style="font-size: 30px">Enter City Name</h3>
+				<hr>
+				<form action="/display" method="get">
+				City:
+						<select name="city">
+							<option value="Chicago" name="city" style= "margin-bottom: 20px">Select city</option>
+							<option value="Chicago" name="city" style= "margin-bottom: 20px">Chicago</option>	
+							<option value="Los Angeles" name="city" style= "margin-bottom: 20px">Los Angeles</option>
+							<option value="San Jose" name="city" style= "margin-bottom: 20px">San Jose</option>
+						</select>
+
+						<input class="btn btn-default btn-lg" type="submit" value="Search"><i class="fa fa-map-signs" aria-hidden="true"></i>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
